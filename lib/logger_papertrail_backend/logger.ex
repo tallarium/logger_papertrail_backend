@@ -104,6 +104,7 @@ defmodule LoggerPapertrailBackend.Logger do
     %{debug: Keyword.get(colors, :debug, :cyan),
       info: Keyword.get(colors, :info, :normal),
       warn: Keyword.get(colors, :warn, :yellow),
+      warning: Keyword.get(colors, :warn, :yellow),
       error: Keyword.get(colors, :error, :red),
       enabled: Keyword.get(colors, :enabled, IO.ANSI.enabled?)}
   end
